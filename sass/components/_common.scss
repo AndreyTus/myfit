@@ -1,0 +1,47 @@
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+body {
+    text-decoration: none;
+    font-family: var(--page-fonts);
+    background-color: var(--header-color);
+    color: var(--secondary-color);
+    font-style: normal;
+    letter-spacing: 0.03em;
+    font-size: 14px;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+    margin: 0;
+}

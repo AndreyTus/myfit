@@ -1,0 +1,238 @@
+.footer-info {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: var(--footer-color);
+}
+
+.logo-web-footer {
+    color: var(--btn-color);
+    font-family: 'Raleway';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.17;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+
+    @include desktop {
+        font-size: 26px;
+        line-height: 1.19;
+        justify-content: start;
+    }
+}
+
+.color-info {
+    font-weight: 400px;
+    margin-bottom: 60px;
+    text-align: center;
+
+    @include desktop {
+        margin-bottom: 0;
+        text-align: start;
+    }
+}
+
+.color-info a {
+    color: var(--btn-active-color);
+    font-style: normal;
+    text-decoration: none;
+}
+
+.color-info a:hover,
+.color-info a:focus {
+    color: var(--btn-active-color);
+}
+
+.color-info a:active {
+    color: var(--btn-color);
+}
+
+.info-visible a {
+    color: var(--adress-color);
+}
+
+.info-visible:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+.footer-link {
+    display: flex;
+    flex-direction: column;
+    width: 206px;
+    align-items: center;
+    margin-bottom: 60px;
+
+    @include desktop {
+        margin-left: 70px;
+        align-items: flex-start;
+        margin-bottom: 0;
+    }
+}
+
+.footer-cont {
+    display: flex;
+    align-items: baseline;
+    @media screen and (max-width: 767px) {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    @include desktop {
+        flex-direction: row;
+        align-items: baseline;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+    .footer-cont {
+        display: flex;
+        flex-wrap: wrap;
+        
+        & div {
+            flex-basis: 50%;
+        }
+    }
+}
+
+.footer-link p {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1, 14;
+    letter-spacing: 0.03em;
+    color: var(--btn-active-color);
+    margin-bottom: 20px;
+}
+
+.list-footer {
+    display: flex;
+    gap: 10px;
+}
+
+.page-icon {
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.social-icon {
+    fill: var(--btn-active-color);
+    width: 20px;
+    height: 20px;
+}
+
+.list-footer a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page-hover {
+    transform: rotate(0);
+    transition: transform 500ms var(--timing-function);
+}
+
+.page-hover:hover,
+.page-hover:focus {
+    background-color: var(--btn-color);
+    border-radius: 50%;
+    transform: rotate(360deg);
+}
+
+.footer-input {
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
+        margin: 0 auto;
+    }       
+
+    @include desktop {
+        margin-left: auto;
+    }
+
+    &  .btn {
+        width: 200px;
+        height: 50px;
+        background: var(--btn-color);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        font-size: 16px;
+        line-height: 1.88;
+        letter-spacing: 0.06em;
+        color: var(--btn-active-color);
+        padding-left: 28px;
+        transform: rotate(0);
+        transition: transform(360deg) 250ms var(--timing-function);
+    }
+    & .btn svg {
+        transform: rotate(0);
+        transition: transform 250ms var(--timing-function);
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .footer-input .btn {
+        margin-left: 12px;
+    }
+}
+
+.submit-icon {
+    margin-left: 10px;
+}
+
+.email-title {
+    display: block;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    color: var(--btn-active-color);
+    margin-bottom: 20px;
+    text-align: center;
+
+    @include desktop {
+        text-align: start;
+    }
+}
+
+.footer-input .btn:focus svg {
+    transform: rotate(360deg);
+}
+
+.foot-mail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include desktop {
+        flex-direction: row;
+    }
+}
+
+.input-size {
+    height: 50px;
+    outline: none;
+    background-color: var(--footer-color);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    color: var(--border-skill);
+    padding: 15px 16px;
+    margin-bottom: 20px;
+
+    @media screen and (min-width: 320px) and (max-width: 1199px) {
+        width: 100%;
+    }
+
+    @media screen and (min-width: 480px) and (max-width:767px) {
+        width: 450px;
+    }
+
+    @include desktop {
+        width: 358px;
+        margin-bottom: 0;
+    }
+}

@@ -1,0 +1,54 @@
+.hero {
+    margin-left: auto;
+    margin-right: auto;
+    background: var(--footer-color);
+    padding: 118px 0;
+    text-align: center;
+    background-image: url(../images/Img\ Overlay.svg), url("../img/Header\ img\ mob\ x1.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &-title {
+        width: 100%;
+        margin-bottom: 30px;
+        margin-left: auto;
+        margin-right: auto;
+        color: var(--btn-active-color);
+        font-weight: 900;
+        font-size: 26px;
+        line-height: 1.62;
+        text-align: center;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+
+        @media screen and (min-width: 768px) {
+            width: 360px;
+        }
+    }
+
+    @include tablet {
+        background-image: url(../images/Img\ Overlay.svg), url("../img/Header\ img\ tabl\ x1.jpeg");
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .hero {
+        max-width: 1600px;
+        padding: 200px 0;
+        background-image: url(../images/Img\ Overlay.svg), url(../images/Img-hero.svg);
+
+        &-title {
+            width: 696px;
+            margin-bottom: 30px;
+            font-size: 44px;
+            line-height: 1.36;
+            text-align: center;
+        }
+    }
+}
+
+// @media screen and (min-width: 768px) {
+//     .hero-title {
+//             width: 360px;
+//     }
+// }
